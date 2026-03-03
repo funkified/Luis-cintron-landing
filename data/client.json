@@ -1,0 +1,12 @@
+{
+  "businessName": "Juancito Landscaping",
+  "phone": "7874141390",
+  "whatsapp": "17874141390",
+  "services": [
+    "Mantenimiento de solares",
+    "Poda de grama",
+    "Limpieza de terrenos"
+  ],
+  "area": "Zona Norte",
+  "heroImage": "/images/hero.jpg"
+}
