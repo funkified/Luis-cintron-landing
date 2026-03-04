@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Juancito Landscaping logo</title>
+  <desc id="desc">Leaf and field mark in a rounded badge with the letter J.</desc>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="252" y1="108" x2="328" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCFCE7"/>
+      <stop offset="1" stop-color="#86EFAC"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="64" y="48" width="384" height="416" rx="96" fill="url(#bg)"/>
+
+  <path d="M132 348C178 304 225 300 256 320C287 300 334 304 380 348" stroke="#BBF7D0" stroke-width="22" stroke-linecap="round"/>
+  <path d="M164 384C204 352 236 348 256 362C276 348 308 352 348 384" stroke="#DCFCE7" stroke-width="14" stroke-linecap="round"/>
+
+  <path d="M246 246C246 183 286 133 358 120C349 194 308 242 246 246Z" fill="url(#leaf)"/>
+  <path d="M258 232C284 202 307 175 339 145" stroke="#166534" stroke-width="10" stroke-linecap="round"/>
+
+  <path d="M186 172H278V196H214V292C214 314 228 326 250 326H278V350H248C204 350 186 326 186 292V172Z" fill="white"/>
+</svg>
