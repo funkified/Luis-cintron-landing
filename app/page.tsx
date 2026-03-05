@@ -56,7 +56,7 @@ export default function Home() {
           {/* RIGHT IMAGE */}
           <div>
             <Image
-              src="/solar1.jpg"
+              src="/solar1.png"
               alt="Calentador Solar"
               width={600}
               height={500}
