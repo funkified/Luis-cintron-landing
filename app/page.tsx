@@ -8,7 +8,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center text-center text-white">
         <Image
-          src="/hero-solar-desktop.jpg"
+          src="/solar1.jpg"
           alt="Sistema Solar Universal"
           fill
           priority
