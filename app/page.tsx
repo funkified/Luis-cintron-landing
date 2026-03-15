@@ -1,263 +1,191 @@
-import Image from "next/image";
-import client from "@/data/client.json";
-import LeadForm from "./components/LeadForm";
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-white text-gray-800">
+<title>Calentadores Solares | Luis Cintrón</title>
 
-      {/* HERO */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-12">
+<style>
 
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Universal Solar – Luis Cintrón
-            </h1>
-
-            <p className="mt-4 text-lg text-gray-600">
-              Representante autorizado en Ponce
-            </p>
-
-            <p className="mt-6 text-lg text-gray-700">
-              Instalación profesional de calentadores solares, cisternas
-              y sistemas solares para tu hogar.
-            </p>
-
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-
-              <a
-                href={`tel:${client.phone}`}
-                className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-lg font-semibold text-center"
-              >
-                Llamar Ahora
-              </a>
-
-              <a
-                href={`https://wa.me/${client.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold text-center"
-              >
-                WhatsApp
-              </a>
-
-            </div>
-          </div>
-
-          <div>
-            <Image
-              src="/solar1.jpg"
-              alt="Calentador Solar"
-              width={600}
-              height={500}
-              className="rounded-xl shadow-xl object-cover w-full"
-              priority
-            />
-          </div>
-
-        </div>
-      </section>
-
-      {/* TRUST BAR */}
-      <section className="bg-yellow-500 text-black py-4 text-center font-semibold">
-        ✔ Instalación profesional &nbsp; | &nbsp; ✔ Productos duraderos &nbsp; | &nbsp; ✔ Evaluación gratuita
-      </section>
-
-
-      {/* SERVICIOS */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-
-          <Service
-            title="Calentadores Solares"
-            text="Agua caliente todo el año reduciendo el consumo eléctrico."
-          />
-
-          <Service
-            title="Cisternas Residenciales"
-            text="Almacenamiento seguro de agua para proteger tu hogar."
-          />
-
-          <Service
-            title="Instalación Profesional"
-            text="Equipo técnico especializado para instalación rápida y segura."
-          />
-
-          <Service
-            title="Evaluación Gratuita"
-            text="Orientación y cotización sin compromiso."
-          />
-
-        </div>
-      </section>
-
-
-      {/* PRODUCTOS */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-
-          <h2 className="text-3xl font-bold">
-            Nuestros Productos
-          </h2>
-
-          <p className="mt-4 text-gray-600">
-            Equipos confiables para tu hogar y ahorro energético.
-          </p>
-
-          <div className="mt-12 grid md:grid-cols-3 gap-8">
-
-            <Product
-              title="Calentadores Solares"
-              text="Reduce tu factura eléctrica con agua caliente natural."
-            />
-
-            <Product
-              title="Cisternas"
-              text="Almacenamiento de agua para garantizar suministro continuo."
-            />
-
-            <Product
-              title="Paneles Solares"
-              text="Opciones de energía solar para reducir costos eléctricos."
-            />
-
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* BENEFICIOS */}
-      <section className="bg-gray-50 py-20 text-center px-6">
-
-        <h2 className="text-3xl font-bold">
-          Beneficios de la Energía Solar
-        </h2>
-
-        <div className="mt-10 grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-
-          <Benefit
-            title="Ahorro en electricidad"
-            text="Reduce significativamente tu factura eléctrica."
-          />
-
-          <Benefit
-            title="Independencia energética"
-            text="Menos dependencia del sistema eléctrico tradicional."
-          />
-
-          <Benefit
-            title="Equipos duraderos"
-            text="Sistemas diseñados para durar años."
-          />
-
-        </div>
-
-      </section>
-
-
-      {/* GALERIA */}
-      <section className="py-20 px-6 bg-white">
-
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-
-          <GalleryImage src="/solar1.jpg" />
-          <GalleryImage src="/solar2.jpg" />
-          <GalleryImage src="/solar3.jpg" />
-
-        </div>
-
-      </section>
-
-
-      {/* FORMULARIO */}
-      <LeadForm />
-
-
-      {/* CTA FINAL */}
-      <section className="bg-yellow-500 py-16 text-center">
-
-        <h2 className="text-3xl font-bold">
-          Solicita tu evaluación gratuita hoy
-        </h2>
-
-        <p className="mt-4">
-          Nuestro equipo te orienta sin compromiso.
-        </p>
-
-        <a
-          href={`https://wa.me/${client.whatsapp}`}
-          className="inline-block mt-6 bg-black text-white px-8 py-4 rounded-lg font-semibold"
-        >
-          Hablar por WhatsApp
-        </a>
-
-      </section>
-
-
-      {/* FOOTER */}
-      <footer className="bg-black text-white text-center py-8">
-
-        <p className="font-semibold">
-          Universal Solar – Luis Cintrón
-        </p>
-
-        <p className="text-sm text-gray-400 mt-2">
-          Instalación de calentadores solares, cisternas y sistemas solares en Puerto Rico.
-        </p>
-
-      </footer>
-
-    </main>
-  );
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#111;
+text-align:center;
 }
 
-
-
-/* COMPONENTS */
-
-
-function Service({ title, text }: { title: string; text: string }) {
-  return (
-    <div className="bg-white p-6 rounded-xl shadow">
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="mt-3 text-gray-600">{text}</p>
-    </div>
-  );
+.hero{
+background:#0f172a;
+color:white;
+padding:60px 20px;
 }
 
-
-function Product({ title, text }: { title: string; text: string }) {
-  return (
-    <div className="bg-gray-50 p-6 rounded-xl shadow">
-      <h3 className="text-xl font-semibold">{title}</h3>
-      <p className="mt-3 text-gray-600">{text}</p>
-    </div>
-  );
+.hero h1{
+font-size:38px;
+margin-bottom:10px;
 }
 
-
-function Benefit({ title, text }: { title: string; text: string }) {
-  return (
-    <div>
-      <h3 className="font-semibold text-lg">{title}</h3>
-      <p className="text-gray-600 mt-2">{text}</p>
-    </div>
-  );
+.hero p{
+font-size:20px;
 }
 
-
-function GalleryImage({ src }: { src: string }) {
-  return (
-    <div className="overflow-hidden rounded-xl shadow-lg">
-      <Image
-        src={src}
-        alt="Instalación realizada"
-        width={1200}
-        height={800}
-        className="object-cover w-full h-full"
-      />
-    </div>
-  );
+.section{
+padding:40px 20px;
 }
+
+.image{
+max-width:500px;
+width:90%;
+border-radius:10px;
+margin-top:20px;
+}
+
+.benefits{
+font-size:20px;
+line-height:1.8;
+margin-top:20px;
+}
+
+.button{
+display:inline-block;
+padding:18px 28px;
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+border-radius:8px;
+text-decoration:none;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.call{
+background:#111;
+color:white;
+margin-left:10px;
+}
+
+.phone{
+margin-top:15px;
+font-size:20px;
+}
+
+.footer{
+margin-top:40px;
+font-size:16px;
+color:#444;
+}
+
+.sticky{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px 22px;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 12px rgba(0,0,0,0.3);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>Deja de pagarle a LUMA por agua caliente</h1>
+
+<p>
+Instala un calentador solar Universal  
+y ahorra dinero todos los meses.
+</p>
+
+<a class="button whatsapp"
+href="https://wa.me/17878005102?text=Hola%20quiero%20información%20sobre%20el%20calentador%20solar"
+target="_blank">
+
+💬 Cotizar por WhatsApp
+
+</a>
+
+<a class="button call"
+href="tel:+17878005102">
+
+📞 Llamar ahora
+
+</a>
+
+<div class="phone">
+📞 787-800-5102
+</div>
+
+</div>
+
+<div class="section">
+
+<img class="image"
+src="https://upload.wikimedia.org/wikipedia/commons/4/47/Solar_water_heater_on_roof.jpg">
+
+<div class="benefits">
+
+✔ Agua caliente todo el día  
+<br>
+
+✔ Ahorra dinero todos los meses  
+<br>
+
+✔ Instalación profesional  
+<br>
+
+✔ Equipos resistentes a huracanes  
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Cotizaciones Gratis</h2>
+
+<p>
+Instalamos calentadores solares en toda el área metro  
+y pueblos cercanos.
+</p>
+
+<a class="button whatsapp"
+href="https://wa.me/17878005102?text=Hola%20quiero%20información%20sobre%20el%20calentador%20solar"
+target="_blank">
+
+💬 Escribir por WhatsApp
+
+</a>
+
+</div>
+
+<div class="footer">
+
+Luis Cintrón  
+<br>
+Servicio en Puerto Rico
+
+</div>
+
+<a class="sticky"
+href="https://wa.me/17878005102?text=Hola%20quiero%20información%20sobre%20el%20calentador%20solar"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+</body>
+</html>
